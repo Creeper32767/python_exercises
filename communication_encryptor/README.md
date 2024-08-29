@@ -4,7 +4,7 @@ This is a program to encrypt our communication.
 
 ## BEFORE START
 
-'communication_encryptor' is licensed under [MIT](./LICENSE-MIT).
+'communication_encryptor' is licensed under [MIT](./LICENSE).
 
 Copyright © 2024 by Creeper32767
 
