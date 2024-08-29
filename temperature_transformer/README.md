@@ -13,7 +13,8 @@ requirements:
 ## HOW TO USE
 
 1. Enter an Celsius or Fahrenheit temperature. (mark it by ending up with 'C', 'c', 'F' or 'f'.)
+2. Then it'll transform the temperature to another type.
 
 ## ISSUES
 
-Please give us your ideas through 'issues' part in GitHub.
+Please give us your ideas through the 'issues' part on GitHub.
