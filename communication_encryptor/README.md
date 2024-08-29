@@ -39,9 +39,9 @@ hello world!
 ```
 
 ## PRINCIPLE
-
 It's completed by getting every character's order in the Unicode Charset and transforming base systems.
+
 
 ## ISSUES
 
-Please give us your ideas through 'issues' part in GitHub.
+Please give us your ideas through the 'issues' part on GitHub.
