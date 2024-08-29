@@ -4,7 +4,7 @@ This is a program to automatically copy and rename assets file of Minecraft.
 
 ## BEFORE START
 
-'minecraft_assets_restore' is licensed under [MIT](./LICENSE-MIT).
+'minecraft_assets_restore' is licensed under [MIT](./LICENSE).
 
 Copyright © 2024 by Creeper32767
 
