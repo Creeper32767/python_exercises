@@ -4,7 +4,7 @@ This is a program to check id number and give you information.
 
 ## BEFORE START
 
-'id_card_verification' is licensed under [MIT](./LICENSE-MIT).
+'id_card_verification' is licensed under [GPLv3](./LICENSE).
 
 Copyright © 2024 by Creeper32767
 
