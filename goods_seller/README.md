@@ -4,7 +4,7 @@ This is a program to sell goods. *And their information are in ''goods.json'.*
 
 ## BEFORE START
 
-'goods_seller' is licensed under [MIT](./LICENSE-MIT).
+'goods_seller' is licensed under [MIT](./LICENSE).
 
 Copyright © 2024 by Creeper32767
 
