@@ -4,7 +4,7 @@ This is a program calculate the factors of a number.
 
 ## BEFORE START
 
-'factor_calculator' is licensed under [MIT](./LICENSE-MIT).
+'factor_calculator' is licensed under [MIT](./LICENSE).
 
 Copyright © 2024 by Creeper32767
 
