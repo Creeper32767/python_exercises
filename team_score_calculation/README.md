@@ -1,10 +1,10 @@
-# PROJECT: team_score_calculator
+# PROJECT: team_scores_calculator
 
 This is a program to calculate the scores of each team.
 
 ## BEFORE START
 
-'team_points_calculator' is licensed under [GPLv3](./LICENSE).
+'team_scores_calculator' is licensed under [GPLv3](./LICENSE).
 
 Copyright © 2024 by Creeper32767
 
