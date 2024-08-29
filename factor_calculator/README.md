@@ -30,4 +30,4 @@ It's completed by looping and dividing the number you entered by different numbe
 
 ## ISSUES
 
-Please give us your ideas through 'issues' part in GitHub.
+Please give us your ideas through the 'issues' part on GitHub.
