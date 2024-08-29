@@ -4,7 +4,7 @@ This is a program to calculate the scores of each team.
 
 ## BEFORE START
 
-'team_points_calculation' is licensed under [MIT](./LICENSE).
+'team_points_calculation' is licensed under [GPLv3](./LICENSE).
 
 Copyright © 2024 by Creeper32767
 
