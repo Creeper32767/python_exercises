@@ -4,7 +4,7 @@ This is a program to turn a lyrics-like string to .lrc file.
 
 ## BEFORE START
 
-'lyrics_conventor' is licensed under [MIT](./LICENSE-MIT).
+'lyrics_conventor' is licensed under [MIT](./LICENSE).
 
 Copyright © 2024 by Creeper32767
 
