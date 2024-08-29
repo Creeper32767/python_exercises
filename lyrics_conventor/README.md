@@ -15,7 +15,7 @@ requirements:
 ## HOW TO USE
 
 1. Enter the string you used to seperate lyrics
-2. Enter the original lyrics string. (format: lyrics + segmentation string + filename)
+2. Enter the original lyrics string. ***(format: lyrics + segmentation string + filename)***
 
 ### EXAMPLE
 
@@ -27,4 +27,4 @@ Finished. Press 'Enter' to exit.
 
 ## ISSUES
 
-Please give us your ideas through 'issues' part in GitHub.
+Please give us your ideas through the 'issues' part on GitHub.
