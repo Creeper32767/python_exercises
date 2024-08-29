@@ -1,6 +1,6 @@
 # PROJECT: goods_seller
 
-This is a program to sell goods. *And their information are in ''goods.json'.*
+This is a program to sell goods. *Commodity informations are stored in 'goods.json'.*
 
 ## BEFORE START
 
