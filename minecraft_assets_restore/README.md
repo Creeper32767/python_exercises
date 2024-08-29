@@ -20,8 +20,8 @@ requirements:
 
 ## PRINCIPLE
 
-It's completed by reading the index file and copying the objects according to the information.
+This is done by reading the index file and copying the objects based on the information. 
 
 ## ISSUES
 
-Please give us your ideas through 'issues' part in GitHub.
+Please give us your ideas through the 'issues' part on GitHub.
