@@ -14,8 +14,10 @@ requirements:
 
 ## HOW TO USE
 
-1. Enter an a second-generation resident ID card, then it'll check it and give you information.
+1. Enter an a second-generation resident ID card.
+2. It'll check it and give you information.
+   ***It won't upload any informations about you to the Internet.***
 
 ## ISSUES
 
-Please give us your ideas through 'issues' part in GitHub.
+Please give us your ideas through the 'issues' part on GitHub.
