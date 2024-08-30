@@ -21,10 +21,12 @@ for team in range(1, team_number+1):
             li_scores_persons.append(tup_scores)
             break
         except ValueError:
-            print("输入中包含非数字字符或为空，请再输入一次。")
+            print("[error] 输入中包含非数字字符或为空，请再输入一次。")
 
 
 teams_obj = Team(li_scores_persons, add_points)
 teams_obj.rank()
 rank_str = teams_obj.output()
-print(rank_str)
+print("\n[result]\n"+rank_str)
+
+input("Finished. Press 'Enter' to exit.")
