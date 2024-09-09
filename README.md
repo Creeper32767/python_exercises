@@ -1,12 +1,12 @@
 Some fun python example program
 
-***NOTICE: every folder is a seperated project!***
+***NOTICE: every folder is a seperate project!***
 
 so every folder will include a README and a LICENSE file
 
 Happy playing!
 
-projects
+projects (8 projects)
 
 - communication_encryptor
 - factor_calculator
