@@ -42,8 +42,8 @@ with open(index_file) as f:
 
     for key1 in objects:
         if type(objects[key1]) == dict:
-            # key1 -> file path (relative)
-            # two value: [hash, file_size(B)]
+            # key1 -> relative file path
+            # two values: hash and file_size(B)
             hash = objects[key1]["hash"]
             file_size = objects[key1]["size"]
 
@@ -57,7 +57,7 @@ with open(index_file) as f:
             copy(original_path, correct_path)
             size = os.path.getsize(correct_path)
             if size == file_size:
-                # count how many files are copied
+                # count how many files have been copied
                 count += 1
                 stdout.flush()
                 stdout.write(f'\r[info] Successfully copied {str(count).ljust(9, " ")} files.')
