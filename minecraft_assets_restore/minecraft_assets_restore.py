@@ -54,15 +54,26 @@ with open(index_file) as f:
                 os.makedirs(os.path.dirname(correct_path))
 
             # copy and check file size
-            copy(original_path, correct_path)
-            size = os.path.getsize(correct_path)
-            if size == file_size:
-                # count how many files have been copied
-                count += 1
-                stdout.flush()
-                stdout.write(f'\r[info] Successfully copied {str(count).ljust(9, " ")} files.')
-            else:
-                print(f"[warn] The file should take up {file_size}B, but we found that it takes up {size}B in fact.")
+            try:
+                copy(original_path, correct_path)
+                size = os.path.getsize(correct_path)
+                if size == file_size:
+                    # count how many files have been copied
+                    count += 1
+                    stdout.flush()
+                    stdout.write(f'\r[info] Successfully copied {str(count).ljust(9, " ")} files.')
+                else:
+                    print(f"\033[31m[warn] The file should take up {file_size}B, but we found that it takes up {size}B actually.\033[0m")
+
+            # if original_path and correct_path are same 
+            except shutil.SameFileError: 
+                print("\033[31m[error] Source and destination represents the same file.\033[0m") 
+            # if there is any permission problem 
+            except PermissionError: 
+                print("\033[31m[error] Permission denied.\033[0m") 
+            # for other errors 
+            except: 
+                print("\033[31m[error] Error occurred while copying files.\033[0m")
 
 # open the folder
 os.system(f"explorer.exe {direction_path}")
