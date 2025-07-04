@@ -14,5 +14,6 @@ projects (8 projects)
 - id_card_verification
 - lyrics_conventor
 - minecraft_assets_restore
+- srt_conventor
 - team_points_calculation
 - temperature_transformer
