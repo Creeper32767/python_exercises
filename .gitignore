@@ -1,0 +1,12 @@
+.idea/
+.venv/
+communication_encryptor/__pycache__/
+factor_calculator/__pycache__/
+goods_seller/__pycache__/
+id_card_verification/__pycache__/
+lrc_conventor/__pycache__/
+lyrics_conventor/__pycache__/
+minecraft_assets_restore/__pycache__/
+srt_conventor/__pycache__/
+team_scores_calculator/__pycache__/
+temperature_transformer/__pycache__/

@@ -15,11 +15,11 @@ while True:
 
     else:
         print("[error] Your input contains other characters besides numbers.")
-    print(f"[info] Current value of carry_over is {carry_over}\n")
+    print(f"[info] Current value of carry_over is {carry_over}.\n")
 
 while True:
     print("+"*20)
-    cmd = input("[command] Enter e(ncode)/d(ecode)/q(uit): ")
+    cmd = input("[command] What do you want to do next?\n[e] encode\n[d] decode\n[q] quit\nEnter your option: ")
     if cmd == "e":
         content = input("[content] Input: ")
         print(encodelongstring(content, carry_over))

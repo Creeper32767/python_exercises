@@ -1,0 +1,7 @@
+[project]
+name = "python-exercises"
+version = "0.1.0"
+description = "My collection of fun and practical Python example programs。"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = []
