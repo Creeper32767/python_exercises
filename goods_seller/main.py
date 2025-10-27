@@ -10,7 +10,7 @@ allowed = list(goods.keys())
 start = 0
 
 
-def choose_good(good_order: str) -> tuple:
+def choose_good(good_order: str) -> tuple[str, float]:
     """
     to choose a good by giving its order.
 
@@ -18,7 +18,7 @@ def choose_good(good_order: str) -> tuple:
         good_order (str): the order of the good
 
     Returns:
-        tuple[str, list[str, float]]: the order and the price of the good
+        tuple[str, float]: the name and the price of the good
     """
     try:
         li = goods[good_order]

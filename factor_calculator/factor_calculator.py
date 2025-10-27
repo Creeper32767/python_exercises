@@ -1,5 +1,5 @@
 # core function that used to calculate factors
-def factor(number: int) -> list:
+def factor(number: int) -> list[int]:
     """
     to calculate the factors of a number.
 
@@ -7,10 +7,10 @@ def factor(number: int) -> list:
         number (int): the number you want to transform.
 
     Returns:
-        list: includes the factors of the number
+        list[int]: includes the factors of the number
     """
 
-    res_li = list()
+    res_li: list[int] = list()
     for i in range(1, round((number+2)/2)):
         result = number / i
 
@@ -25,7 +25,7 @@ def factor(number: int) -> list:
 num = input("[initialization] Enter an integer: ")
 if num.isdigit():
     li = factor(int(num))
-    if li is not None:
+    if li:
         print(f"[result] <{num}>'s factors are: ", end="")
         print(*li, sep=", ")
 else:

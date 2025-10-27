@@ -1,4 +1,4 @@
-def process_lrc(lrc_string: str, split_string: str) -> tuple:
+def process_lrc(lrc_string: str, split_string: str) -> tuple[str, list[str]]:
     """
     universal methods to process lyrics string.
 

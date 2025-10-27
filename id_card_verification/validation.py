@@ -1,9 +1,8 @@
 import datetime
 import json
-import os
 
 date_today = datetime.datetime.now()
-with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), "area-full.json"), encoding="utf-8") as f:
+with open("area-full.json", encoding="utf-8") as f:
     regions = json.load(f)
 
 

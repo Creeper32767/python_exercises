@@ -1,5 +1,6 @@
 import json
 import os
+from typing import Any
 from shutil import copy
 from sys import stdout
 
@@ -10,7 +11,7 @@ assets_path = os.path.join(minecraft_directory, "assets\\objects")
 direction_path = os.path.join(minecraft_directory, f"minecraft_assets\\")
 
 
-def chooser(choices: list):
+def chooser(choices: list[Any]) -> Any:
     """
     universal method to select one element in a list.
 
@@ -22,8 +23,8 @@ def chooser(choices: list):
     """
 
     print("Here are several items to choose.")
-    for item in choices:
-        print(f"[{choices.index(item)}] {item}")
+    for index, item in enumerate(choices):
+        print(f"[{index}] {item}")
 
     choice = input("[chooser] Enter the order to choose one: ")
     try:

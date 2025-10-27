@@ -8,7 +8,7 @@ with open(join(abspath(dirname(__file__)), "settings.json"), encoding="utf-8") a
     team_number = settings["team_default"]
 
 # get data
-li_scores_persons = list()
+li_scores_persons: list[tuple[float, ...]] = list()
 for team in range(1, team_number+1):
     while True:
         try:

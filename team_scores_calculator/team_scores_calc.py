@@ -1,22 +1,25 @@
+from typing import Any
 from time import strftime, localtime
 
 
-def average(li: list, add_points: int) -> int:
+def average(li: list[float | int] | tuple[float | int, ...],
+            add_points: int
+            ) -> float:
     """
     to calculate the average number of a list that all the items are numbers.
 
     Args:
-        li (list/tuple): a group of numbers that you want to calculate its average number.
+        li (list | tuple): a group of numbers that you want to calculate its average number.
         add_points (int): default base value
 
     Returns:
-        int: the average number
+        float: the average number
     """
 
     return round(sum(li)/len(li), 2) + add_points
 
 
-def getlen(li: list) -> int:
+def getlen(li: list[Any]) -> int:
     """
     to get the longest item's length in a list.
 
@@ -32,7 +35,7 @@ def getlen(li: list) -> int:
 
 
 class Team(object):
-    def __init__(self, li_scores: list, add_points: int):
+    def __init__(self, li_scores: list[tuple[float | int, ...]], add_points: int):
         """
         initialization.
         """
@@ -42,8 +45,8 @@ class Team(object):
         self.date = strftime("%Y-%m-%d", localtime())
 
         # calculate every team's average score
-        self.li_scores_aver = list()
-        self.li_ranks = list()
+        self.li_scores_aver: list[float] = list()
+        self.li_ranks: list[int] = list()
         for group_scores in li_scores:
             self.li_scores_aver.append(average(group_scores, add_points))
         self.len_scores = getlen(self.li_scores_aver)
@@ -63,9 +66,9 @@ class Team(object):
             self.li_ranks.append(li_scores_aver_sorted.index(team_score)+1)
         self.len_ranks = getlen(self.li_ranks)
 
-        # pre-processing
-        self.li_scores_aver = list(map(str, self.li_scores_aver))
-        self.li_ranks = list(map(str, self.li_ranks))
+        # pre-processing: keep numeric lists as-is and produce string copies for presentation
+        self.li_scores_aver_str = list(map(str, self.li_scores_aver))
+        self.li_ranks_str = list(map(str, self.li_ranks))
 
 
     def output(self) -> str:
@@ -76,7 +79,8 @@ class Team(object):
             str: result including team name, its average score and its rank
         """
 
-        self.li_merged = list(zip(self.li_teams, self.li_scores_aver, self.li_ranks))
+        # use the stringified copies prepared in rank()
+        self.li_merged = list(zip(self.li_teams, self.li_scores_aver_str, self.li_ranks_str))
         template_str = "第 {} 组分数为 {} 分，第 {} 名！ {}\n"
         template_rank = ("[1st]", "[2nd]", "[3rd]")
 
@@ -93,7 +97,7 @@ class Team(object):
         return res_str
 
 
-    def interface(self, type: str) -> tuple:
+    def interface(self, type: str) -> tuple[Any, Any]:
         """
         defines api here.
 
@@ -109,4 +113,4 @@ class Team(object):
         elif type == "persons":
             return self.date, self.li_scores
         else:
-            return None
+            return None, None

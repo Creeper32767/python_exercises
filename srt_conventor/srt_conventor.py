@@ -1,11 +1,12 @@
 import os
 import sys
+from typing import Any
 from time import sleep
 
 path = os.path.abspath(os.path.dirname(__file__))
 
 
-def chooser(choices: list):
+def chooser(choices: list[Any]) -> Any:
     """
     universal method to select one element in a list.
 
@@ -66,6 +67,7 @@ def process_srt(file_name: str):
                 subtitle = subtitle[2:]
 
                 # make all the sentences in the same language get in one line
+                last_sentence = ""
                 for order, line in enumerate(subtitle): 
                     if order == 0:
                         output_file.write(line)
